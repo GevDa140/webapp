@@ -18,6 +18,7 @@ pipeline {
         sh 'rm owasp* || true'
         sh 'wget "https://raw.githubusercontent.com/GevDa140/webapp/main/owasp-dp-checker.sh" '
         sh 'chmod +x owasp-dp-checker.sh'
+        sh 'bash owasp-dp-checker.sh'
       }
     }
     
