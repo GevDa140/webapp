@@ -16,7 +16,7 @@ pipeline {
     stage ('Source Composition Analysis'){
       steps {
         sh 'rm owasp* || true'
-        sh 'whet "https://raw.githubusercontent.com/GevDa140/webapp/main/owasp-dp-checker.sh" '
+        sh 'wget "https://raw.githubusercontent.com/GevDa140/webapp/main/owasp-dp-checker.sh" '
         sh 'chmod +x owasp-dp-checker.sh'
       }
     }
